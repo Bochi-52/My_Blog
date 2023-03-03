@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@vuepress-reco/theme-cli": "^1.0.8"
+  }
+}
