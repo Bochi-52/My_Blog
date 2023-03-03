@@ -1,6 +1,6 @@
 module.exports = {
-  title: "vuepress-theme-reco",
-  description: 'A simple and beautiful vuepress blog theme .',
+  title: "xin-blog",
+  description: 'A simple and convenient personal blog .',
   dest: 'public',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -8,19 +8,15 @@ module.exports = {
   ],
   theme: 'reco',
   themeConfig: {
+    subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     nav: [
-      { text: 'Home', link: '/', icon: 'reco-home' },
-      { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      { text: 'Docs', 
+      { text: '主页', link: '/', icon: 'reco-home' },
+      { text: '记录', link: '/timeline/', icon: 'reco-date' },
+      { text: '其他', 
         icon: 'reco-message',
         items: [
-          { text: 'vuepress-reco', link: '/docs/theme-reco/' }
-        ]
-      },
-      { text: 'Contact', 
-        icon: 'reco-message',
-        items: [
-          { text: 'GitHub', link: 'https://github.com/recoluan', icon: 'reco-github' }
+          { text: 'leetcode', link: 'https://leetcode.cn' },
+          { text: 'github', link: 'https://github.com/' }
         ]
       }
     ],
@@ -37,19 +33,23 @@ module.exports = {
     blogConfig: {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认 “分类”
+        text: '分类' // 默认 “分类”
       },
       tag: {
         location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: 'Tag' // 默认 “标签”
+        text: '标签' // 默认 “标签”
       }
     },
     friendLink: [
       {
-        title: '午后南杂',
-        desc: 'Enjoy when you can, and endure when you must.',
-        email: '1156743527@qq.com',
-        link: 'https://www.recoluan.com'
+        title: 'Emiko',
+        desc: '总是在不停的着迷.',
+        link: 'https://emiko.xiaolinn.xyz'
+      },
+      {
+        title: 'Vuepress使用指南',
+        desc: '知乎 Vuepress使用指南(reco) 此博客搭建中的重要参考',
+        link: 'https://zhuanlan.zhihu.com/p/186211549'
       },
       {
         title: 'vuepress-theme-reco',
@@ -67,13 +67,13 @@ module.exports = {
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
-    author: 'reco_luan',
+    author: 'xin',
     // 作者头像
     authorAvatar: '/avatar.png',
     // 备案号
     record: 'xxxx',
     // 项目开始时间
-    startYear: '2017'
+    startYear: '2023'
     /**
      * 密钥 (if your blog is private)
      */
